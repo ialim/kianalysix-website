@@ -347,4 +347,22 @@ export const SVG = {
       />
     </svg>
   ),
+  rightArrow: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="19.129"
+      height="13.164"
+      viewBox="0 0 19.129 13.164"
+    >
+      <g id="arrow-pointing-to-right" transform="translate(0 -41.916)">
+        <path
+          id="Path_1126"
+          data-name="Path 1126"
+          d="M18.868,47.869l-5.692-5.692a.889.889,0,1,0-1.258,1.258l4.174,4.174H.889a.889.889,0,0,0,0,1.779h15.2l-4.174,4.174a.889.889,0,0,0,1.258,1.258l5.692-5.692A.889.889,0,0,0,18.868,47.869Z"
+          transform="translate(0)"
+          fill="#ee1d23"
+        />
+      </g>
+    </svg>
+  ),
 };
