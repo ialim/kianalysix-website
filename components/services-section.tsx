@@ -116,7 +116,7 @@ const ServicesSection = () => {
           justifyContent="center"
         >
           {serviceItems.map(({ name, imageUrl, slug }, index) => (
-            <ServiceItem name={name} imageUrl={imageUrl} slug={slug} />
+            <ServiceItem name={name} imageUrl={imageUrl} slug={slug} key={index}/>
           ))}
         </SimpleGrid>
       </Box>
