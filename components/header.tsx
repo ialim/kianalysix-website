@@ -15,17 +15,19 @@ const Header = () => {
       borderWidth="thin"
       px={20}
     >
-      <Box py={2}>
-        <Link href="/">{logo}</Link>
+      <Box py={1}>
+        <Link href="/">
+          <a>{logo}</a>
+        </Link>
       </Box>
       <Nav>
         <NavItem href="/" isActive>
           Home
         </NavItem>
-        <NavItem href="#">Our Solutions</NavItem>
-        <NavItem href="#">About Us</NavItem>
-        <NavItem href="#">Career</NavItem>
-        <NavItem href="#">Blog</NavItem>
+        <NavItem href="#">Our Solutions ⌵</NavItem>
+        <NavItem href="/about">About Us</NavItem>
+        <NavItem href="/career">Career</NavItem>
+        <NavItem href="/blog">Blog</NavItem>
         <Box
           as="button"
           color="brand"
