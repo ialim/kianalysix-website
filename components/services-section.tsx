@@ -16,36 +16,42 @@ const serviceItems: serviceItemProps[] = [
     slug:
       "An integral part of the efficacy of any IT solution lies in its underlying infrastructure",
     imageUrl: "",
+    path:"/services/ict"
   },
   {
     name: "ELECTRONIC SECURITY SERVICES (ESS)",
     slug:
       "An integral part of the efficacy of any IT solution lies in its underlying infrastructure",
     imageUrl: "",
+    path:"/services/ess"
   },
   {
     name: "PUBLIC ADDRESS SYSTEMS (PAS)",
     slug:
       "An integral part of the efficacy of any IT solution lies in its underlying infrastructure",
     imageUrl: "",
+    path:"/services/pas"
   },
   {
     name: "SAFETY SYSTEMS (SS)",
     slug:
       "An integral part of the efficacy of any IT solution lies in its underlying infrastructure",
     imageUrl: "",
+    path:"/services/ss"
   },
   {
     name: "BUILDING AND HOME AUTOMATION (BHA)",
     slug:
       "An integral part of the efficacy of any IT solution lies in its underlying infrastructure",
     imageUrl: "",
+    path:"/services/bha"
   },
   {
     name: "RENEWABLE AND ALTERNATIVE ENERGY SYSTEMS (RAE)",
     slug:
       "An integral part of the efficacy of any IT solution lies in its underlying infrastructure",
     imageUrl: "",
+    path:"/services/rae"
   },
 ];
 
@@ -115,8 +121,8 @@ const ServicesSection = () => {
           alignItems="center"
           justifyContent="center"
         >
-          {serviceItems.map(({ name, imageUrl, slug }, index) => (
-            <ServiceItem name={name} imageUrl={imageUrl} slug={slug} key={index}/>
+          {serviceItems.map(({ name, imageUrl, slug, path }, index) => (
+            <ServiceItem name={name} imageUrl={imageUrl} slug={slug} key={index} path={path}/>
           ))}
         </SimpleGrid>
       </Box>
