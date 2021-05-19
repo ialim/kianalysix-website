@@ -9,8 +9,8 @@ const QuickLinks = ({ Links, Header }) => {
       </Heading>
       <List spacing={3} color="#CECECE">
         {Links.map((link, index) => (
-          <Link href="#">
-            <ListItem key={index}>
+          <Link href="#" key={index}>
+            <ListItem >
               <Text d="inline-flex">{link.icon ? link.icon : ""}<Box as="span" pl={link.icon ? 3 : 0}>{link.name}</Box></Text>
             </ListItem>
           </Link>

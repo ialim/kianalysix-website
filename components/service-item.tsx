@@ -1,12 +1,14 @@
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import Link from "next/link"
 
 export interface serviceItemProps {
   name: string;
   slug: string;
   imageUrl: string;
+  path: string
 }
 
-const ServiceItem = ({ name, slug, imageUrl }: serviceItemProps) => {
+const ServiceItem = ({ name, slug, imageUrl, path }: serviceItemProps) => {
   return (
     <Box>
       <Box rounded="md" w={200} h={150}>
@@ -27,7 +29,9 @@ const ServiceItem = ({ name, slug, imageUrl }: serviceItemProps) => {
           {slug}
         </Text>
         <Box as="button" color="#EE1D23" fontSize="sm" fontWeight="bold">
-          Learn more
+          <Link href={path}>
+          <a>Learn more</a>
+          </Link>
         </Box>
       </Box>
     </Box>
