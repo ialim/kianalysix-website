@@ -32,7 +32,7 @@ const index = ({
   heading,
   excerpt,
   badge,
-  content,
+  content = [],
 }: servicePageProps) => {
   return (
     <Page>
